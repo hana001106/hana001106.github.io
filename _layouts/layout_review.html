@@ -1,0 +1,15 @@
+---
+layout: framework
+<!-- sidebar: review-tag-list -->
+<!-- sidebar: tag-list -->
+---
+
+<div class="articles">
+  {% if page.banner == nil %}
+    {% assign banner = page.title %}
+  {% endif %} 
+
+  {{ content }}
+
+  {% include views/pagination_review.html %}
+</div>
