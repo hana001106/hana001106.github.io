@@ -5,7 +5,7 @@ subtitle: 논문 리뷰 하나 하겠다고,,
 categories: talk
 tags: [hard]
 banner:
-    image: /images/default.jpeg
+    image: /images/ponyo/3.jpeg
 top: 1
 ---
 
