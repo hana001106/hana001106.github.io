@@ -247,9 +247,8 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
-excerpt_separator: "\n\n"
-lsi: false
-incremental: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 plugins:
   - jekyll-feed
