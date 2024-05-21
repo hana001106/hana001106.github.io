@@ -243,10 +243,13 @@ header_pages:
 #   follow_site_theme: true
 
 # Build settings
-# highlighter: none
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
+excerpt_separator: "\n\n"
+lsi: false
+incremental: false
 
 plugins:
   - jekyll-feed
