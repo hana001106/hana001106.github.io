@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Kim - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --page-bg: #e9ecef;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--page-bg);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Same header style as index page */
+        .hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+        }
+
+        .navbar-brand {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff !important;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #fff !important;
+        }
+
+        .hero-banner {
+            height: 240px;
+            background-image: url('images/background.jpeg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-title {
+            margin: 0;
+            margin-top: 46px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        .pdf-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 24px auto 32px;
+            height: calc(100vh - 296px);
+            min-height: 760px;
+            padding: 0 24px;
+        }
+
+        .cv-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            background: #fff;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.6rem;
+                margin-top: 42px;
+            }
+
+            .pdf-wrap {
+                padding: 0 12px;
+                min-height: 680px;
+            }
+        }
+
+        .pdf-fallback {
+            padding: 16px 28px;
+        }
+
+        .pdf-fallback a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .pdf-fallback a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg hero-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Be a better person</a>
+
+            <div class="ms-auto">
+                <a class="nav-link d-inline-block px-3" href="index.html#about">About</a>
+                <a class="nav-link d-inline-block px-3" href="index.html#publications">Publications</a>
+                <a class="nav-link d-inline-block px-3" href="cv.html">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <h1 class="hero-title">Curriculum vitae</h1>
+    </header>
+
+    <main class="pdf-wrap">
+        <iframe class="cv-frame" src="CV_%EA%B9%80%ED%95%98%EB%82%98.pdf" title="Curriculum vitae"></iframe>
+    </main>
+
+    <noscript>
+        <p class="pdf-fallback">
+            If the PDF does not load, open it directly:
+            <a href="CV_%EA%B9%80%ED%95%98%EB%82%98.pdf" target="_blank" rel="noopener">CV PDF</a>
+        </p>
+    </noscript>
+</body>
+</html>
